@@ -1,5 +1,16 @@
 # E - Commerce Sales Dataset
 
+## Table of Contents
+
+> - [Introduction](#introduction )
+> - [Statement of Problem](#statement_of_problem)
+> - [Tools and Methodology](#Tools_and_methodology)
+> - 
+
+
+
+
+
 ## Introduction 
 
 This is an open dataset, provided by *Pragmatic World*, that contains comprehensive sales records from a typical e-commerce operation. It captures various facets of sales activities, with key data points including unique identifiers for products, customers, and manufacturers, along with other essential transaction details.
