@@ -14,7 +14,7 @@
 >
 > - [Data Modelling](#data-modelling)
 >
-> - [Data Visualization and Analysis](data-visualization-and-analysis)
+> - [Data Visualization and Analysis](#data-visualization-and-analysis)
 >
 > - [Conclusion](#conclusion)
 >
