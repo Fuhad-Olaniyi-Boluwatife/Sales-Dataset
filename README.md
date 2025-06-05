@@ -4,17 +4,17 @@
 
 > - [Introduction](#introduction )
 >
-> - [Statement of Problem](#statement_of_problem)
+> - [Statement of Problem](#statement-of-problem)
 >
-> - [Tools and Methodology](#Tools_and_methodology)
+> - [Tools and Methodology](#Tools-and-methodology)
 >
-> - [Data Source](#data_source)
+> - [Data Source](#data-source)
 >
-> - [Data Exploration](#data_exploration)
+> - [Data Exploration](#data-exploration)
 >
-> - [Data Modelling](#data_modelling)
+> - [Data Modelling](#data-modelling)
 >
-> - [Data Visualization and Analysis](data_visualization_and_analysis)
+> - [Data Visualization and Analysis](data-visualization-and-analysis)
 >
 > - [Conclusion](#conclusion)
 >
