@@ -6,7 +6,7 @@
 >
 > - [Statement of Problem](#statement-of-problem)
 >
-> - [Tools and Methodology](#Tools-and-methodology)
+> - [Tools and methodology](#tools-and-methodology)
 >
 > - [Data Source](#data-source)
 >
@@ -18,9 +18,9 @@
 >
 > - [Conclusion](#conclusion)
 >
-> - [Observations](#observation)
+> - [Observations](#observations)
 >
-> - [Recommendation](#recommendation)
+> - [Recommendations](#recommendations)
 >
 > - [Referencing](#referencing)
 >
@@ -34,7 +34,13 @@ This is an open dataset, provided by *Pragmatic World*, that contains comprehens
 
 Each record represents a specific sales event, detailing the transaction date, the number of units purchased, and financial metrics such as unit cost and unit price. Additionally, the dataset enriches product insights with information like product names, categories, market segments, and manufacturer details.
 
-To provide deeper geographical context, the dataset also includes location-based data for each transaction, such as zip code, city, state, region, district, and country, enabling robust spatial analysis
+To provide deeper geographical context, the dataset also includes location-based data for each transaction, such as zip code, city, state, region, district, and country, enabling robust spatial analysis.
+
+Here is the look of the dataset 
+![picture22](https://github.com/user-attachments/assets/936cde93-062c-4547-b5f6-839afff48a53)
+
+
+
 
 By leveraging this dataset, I have analyzed sales trends, explored customer behaviour, and assessed geographical performance, uncovering valuable insights to guide strategic decisions. The dashboard below presents key findings and interactive visualizations, enabling deeper exploration of the data’s potential.
 
@@ -61,8 +67,10 @@ Microsoft Power BI and Power Query;
 - **Advanced Analytics**: Leveraged **DAX** to create calculated columns, custom measures, and a dynamic **calendar table** for time intelligence in Microsoft Power BI.
 - **Visualization**: Developed interactive dashboards to transform raw data into actionable insights using Microsoft Power BI.
 
-[data in power query]()
-[Data in power bi]()
+below is how the data looks after data preparation in power query
+
+![Capture](https://github.com/user-attachments/assets/adcb423e-39d3-483a-ad81-6f7367e5837c)
+
 
 
 
@@ -79,13 +87,14 @@ This analysis utilizes an open dataset provided by **Pragmatic World**, containi
   - **1 Fact Table**: Sales transactions (granular records)
   - **5 Dimension Tables**: Supporting reference data (DimProducts, DimCustomers, Dimdate(custom -built for time intelligence analytics), dimCatergories, dimGeographical Tables.
 
-  
+Here is the table in power bi
+
+  ![power bi table](https://github.com/user-attachments/assets/9d244032-9e02-43e4-b1e4-045d4750350f)
+
 
   
 
-  [intialDataset]()
-
-  [finaldataset in power query]()
+ 
 
 ## Data Exploration
 
