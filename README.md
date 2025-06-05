@@ -52,7 +52,7 @@ This is to see how we can optimize product and regional performance by identifyi
 
 
 
-## Tools & Methodology
+## Tools and Methodology
 
 Microsoft Power BI and Power Query;
 
