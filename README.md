@@ -37,8 +37,8 @@ Each record represents a specific sales event, detailing the transaction date, t
 To provide deeper geographical context, the dataset also includes location-based data for each transaction, such as zip code, city, state, region, district, and country, enabling robust spatial analysis.
 
 Here is the look of the dataset 
-![picture22](https://github.com/user-attachments/assets/936cde93-062c-4547-b5f6-839afff48a53)
 
+![dataset](https://github.com/user-attachments/assets/adb383dd-67d2-4bb8-b93c-57ba0305628c)
 
 
 
