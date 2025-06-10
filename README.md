@@ -10,9 +10,7 @@
 >
 > - [Data Source](#data-source)
 >
-> - [Data Exploration](#data-exploration)
->
-> - [Data Modelling](#data-modelling)
+> - [Data Preparation and Trasformation](#data-preparation-and-transformation)
 >
 > - [Data Visualization and Analysis](#data-visualization-and-analysis)
 >
@@ -87,7 +85,7 @@ This analysis utilizes an open dataset provided by **Pragmatic World**, containi
   - **1 Fact Table**: Sales transactions (granular records)
   - **5 Dimension Tables**: Supporting reference data (DimProducts, DimCustomers, Dimdate(custom -built for time intelligence analytics), dimCatergories, dimGeographical Tables.
 
-Here is the table in power bi
+Here are the tables in power bi
 
   ![power bi table](https://github.com/user-attachments/assets/9d244032-9e02-43e4-b1e4-045d4750350f)
 
@@ -96,15 +94,61 @@ Here is the table in power bi
 
  
 
-## Data Exploration
+## Data Preparation and Transformation
+The dataset is nearly in its final cleaned form, with only minor amendments required to ensure optimal data efficiency. These refinements will be applied to the unified dataset before splitting it into various dimension and fact tables. The transformations were performed using the Power Query Editor in Power BI and include the following steps:
+
+### Dimensional Modeling
+The dataset was normalized into 6 tables using dimensional modeling principles:
+
+- 1 Fact Table: Contains granular sales transaction records.
+
+- 5 Dimension Tables: Store supporting reference data, including:
+
+    - DimProducts (Product details)
+    
+    - DimCustomers (Customer information)
+    
+    - DimDate (Custom-built for time intelligence analytics)
+    
+    - DimCategories (Product categorization)
+    
+    - DimGeography (Geographical data)
+
+All tables are linked via primary and foreign keys to establish relational integrity. Below is modelling diagram
+
+![Modelling](https://github.com/user-attachments/assets/c860eef9-5577-40d2-abf6-a65840c452a3)
 
 
+### Key Insights
+Following the data modeling process, key insights were derived and categorized into three main areas for analysis:
 
-## Data Modelling
+-  Customer Performance
+-  Sales Performance
+-  Geographical Performance
 
+This structured approach ensures efficient data analysis and supports robust reporting capabilities.
 
 
 ## Data visualization and analysis
+### Customer Perfromance
+To enhance the analytical depth of the report, I introduced the following measures and calculated columns:
+
+**Key Measures** 
+- Total Customer Count: Calculates the distinct number of customers.
+- Average Revenue per Customer: Determines the mean revenue generated per customer.
+  
+  ```average revenue per customer = DIVIDE([Total Revenue],COUNT(DimCustomer[Full name]))```
+      
+**Customer Segmentation (Calculated Column)**
+- Customers were categorized into four tiers based on their generated revenue:
+     
+  - Platinum (Highest revenue)
+  - Gold
+  - Silver
+  - Bronze (Lowest revenue)
+      
+  This segmentation enables targeted performance analysis across customer groups. Below is the DAX code used for categorization:
+  
 
 ## Conclusion
 
