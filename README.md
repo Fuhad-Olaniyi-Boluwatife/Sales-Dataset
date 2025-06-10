@@ -129,12 +129,26 @@ Following the data modeling process, key insights were derived and categorized i
 This structured approach ensures efficient data analysis and supports robust reporting capabilities.
 
 
-
-## Data Modelling
-
-
-
 ## Data visualization and analysis
+### Customer Perfromance
+To enhance the analytical depth of the report, I introduced the following measures and calculated columns:
+
+**Key Measures** 
+- Total Customer Count: Calculates the distinct number of customers.
+- Average Revenue per Customer: Determines the mean revenue generated per customer.
+  
+  ```average revenue per customer = DIVIDE([Total Revenue],COUNT(DimCustomer[Full name]))```
+      
+**Customer Segmentation (Calculated Column)**
+- Customers were categorized into four tiers based on their generated revenue:
+     
+  - Platinum (Highest revenue)
+  - Gold
+  - Silver
+  - Bronze (Lowest revenue)
+      
+  This segmentation enables targeted performance analysis across customer groups. Below is the DAX code used for categorization:
+  
 
 ## Conclusion
 
