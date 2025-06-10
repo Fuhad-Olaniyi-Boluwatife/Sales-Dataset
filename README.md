@@ -10,9 +10,7 @@
 >
 > - [Data Source](#data-source)
 >
-> - [Data Exploration](#data-exploration)
->
-> - [Data Modelling](#data-modelling)
+> - [Data Preparation and Trasformation](#data-preparation-and-transformation)
 >
 > - [Data Visualization and Analysis](#data-visualization-and-analysis)
 >
