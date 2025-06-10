@@ -154,7 +154,7 @@ To enhance the analytical depth of the report, I introduced the following measur
   
   This segmentation enables targeted performance analysis across customer groups. Below is the DAX code used for categorization:
   
-  ``````
+  ```DAX
   ustomer Segementation = 
   SWITCH(
       TRUE(),
@@ -163,9 +163,25 @@ To enhance the analytical depth of the report, I introduced the following measur
       DimCustomer[revenue per customer]>=150, "Silver",
       "Bronze"
   )
-  ``````
+  ```
+Below is the customer page 
+[image]()
   
-  
+The dashboard provides an overview of customer metrics, segmentation, and top performers.
+  ### Overall Customer Base
+  - Total Customer: 282600
+  - average revenue generated per customer: 231.95
+  - Customer Type: The customer base is dominated by returning customers (276,760) with a much smaller number of new customers (5,830).
+  - Customer Spending Segmentation:
+      - The largest segment is Silver, accounting for 72.36% of customers based on spending.
+      - Gold customers make up 16.75%.
+      - Bronze customers represent 10.62%.
+      - Platinum customers are the smallest group at 0.26%.
+  - The evaluation of customer spending patterns identifies Rhonda Hanson as the highest-spending individual, with total purchases amounting to $1,250 during the entire analysis period. This finding emerges from our ranking of the top 10 customers based on cumulative expenditure, which serves as a valuable indicator of client value and purchasing behavior.
+  - Customer distribution by state shows the highest concentrations in Texas (TX) with 25,366 customers, California (CA) with 19,975, and Florida (FL) with 18,859. The table further breaks down these state totals by spending tier (Bronze, Gold, Platinum, Silver).
+    
+The customer spending data can be filtered by year to track purchasing behavior over time. This reveals valuable insights, such as whether top customers like Rhonda Hanson ($1,250 total spend) maintained consistent spending year after year or had fluctuating patterns. By analyzing these yearly trends, we can identify loyal customers, spot emerging high-value clients, and notice any declining spenders who may need re-engagement. This time-based view helps tailor customer retention strategies and personalize marketing efforts more effectively
+
 
 ## Observations
 
