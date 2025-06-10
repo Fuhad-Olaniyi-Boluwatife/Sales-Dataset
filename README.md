@@ -90,9 +90,9 @@ Here are the tables in power bi
   ![power bi table](https://github.com/user-attachments/assets/9d244032-9e02-43e4-b1e4-045d4750350f)
 
 
-  
 
- 
+
+
 
 ## Data Preparation and Transformation
 The dataset is nearly in its final cleaned form, with only minor amendments required to ensure optimal data efficiency. These refinements will be applied to the unified dataset before splitting it into various dimension and fact tables. The transformations were performed using the Power Query Editor in Power BI and include the following steps:
@@ -137,20 +137,35 @@ To enhance the analytical depth of the report, I introduced the following measur
 - Total Customer Count: Calculates the distinct number of customers.
 - Average Revenue per Customer: Determines the mean revenue generated per customer.
   
-  ```average revenue per customer = DIVIDE([Total Revenue],COUNT(DimCustomer[Full name]))```
-      
+  ```DAX
+  average revenue per customer = DIVIDE([Total Revenue],COUNT(DimCustomer[Full name]))
+  ```
+  
+  ​    
+
 **Customer Segmentation (Calculated Column)**
 - Customers were categorized into four tiers based on their generated revenue:
-     
+  
   - Platinum (Highest revenue)
   - Gold
   - Silver
   - Bronze (Lowest revenue)
-      
+    
+  
   This segmentation enables targeted performance analysis across customer groups. Below is the DAX code used for categorization:
   
-
-## Conclusion
+  ``````
+  ustomer Segementation = 
+  SWITCH(
+      TRUE(),
+      DimCustomer[revenue per customer]>=450, "Platinum",
+      DimCustomer[revenue per customer]>=300, "Gold",
+      DimCustomer[revenue per customer]>=150, "Silver",
+      "Bronze"
+  )
+  ``````
+  
+  
 
 ## Observations
 
