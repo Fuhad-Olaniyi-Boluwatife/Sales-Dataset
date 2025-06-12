@@ -155,7 +155,7 @@ To enhance the analytical depth of the report, I introduced the following measur
   This segmentation enables targeted performance analysis across customer groups. Below is the DAX code used for categorization:
   
   ```DAX
-  ustomer Segementation = 
+  Customer Segementation = 
   SWITCH(
       TRUE(),
       DimCustomer[revenue per customer]>=450, "Platinum",
@@ -164,8 +164,11 @@ To enhance the analytical depth of the report, I introduced the following measur
       "Bronze"
   )
   ```
+  
 Below is the customer page 
-[image]()
+
+![customer page](https://github.com/user-attachments/assets/1c035e00-d1d7-4624-b0e3-015c50da0cca)
+
   
 The dashboard provides an overview of customer metrics, segmentation, and top performers.
   ### Overall Customer Base
@@ -180,7 +183,67 @@ The dashboard provides an overview of customer metrics, segmentation, and top pe
   - The evaluation of customer spending patterns identifies Rhonda Hanson as the highest-spending individual, with total purchases amounting to $1,250 during the entire analysis period. This finding emerges from our ranking of the top 10 customers based on cumulative expenditure, which serves as a valuable indicator of client value and purchasing behavior.
   - Customer distribution by state shows the highest concentrations in Texas (TX) with 25,366 customers, California (CA) with 19,975, and Florida (FL) with 18,859. The table further breaks down these state totals by spending tier (Bronze, Gold, Platinum, Silver).
     
-The customer spending data can be filtered by year to track purchasing behavior over time. This reveals valuable insights, such as whether top customers like Rhonda Hanson ($1,250 total spend) maintained consistent spending year after year or had fluctuating patterns. By analyzing these yearly trends, we can identify loyal customers, spot emerging high-value clients, and notice any declining spenders who may need re-engagement. This time-based view helps tailor customer retention strategies and personalize marketing efforts more effectively
+The customer spending data can be filtered by year to track purchasing behavior over time. This reveals valuable insights, such as whether top customers like Rhonda Hanson ($1,250 total spend) maintained consistent spending year after year or had fluctuating patterns. By analyzing these yearly trends, we can identify loyal customers, spot emerging high-value clients, and notice any declining spenders who may need re-engagement. This time-based view helps tailor customer retention strategies and personalize marketing efforts more effectively.
+
+### Sales performance
+To enhance the analytical depth of the report, I introduced the following calculate measures:
+- Gross Profit(Select year, previous year and the percentage change bewteen both)
+- Total Cost (Select year, previous year and the percentage change bewteen both)
+- Total Revenue (Select year, previous year and the percentage change bewteen both)
+- Total Sales (Select year, previous year and the percentage change bewteen both)
+- Profit margin (switch is uniform over the years for this dataset)
+
+  here is the dax expression for the percentage change
+  ```DAX
+%total cost = 
+VAR current_cost = [Total Cost]
+VAR last_cost = [total cost(last year)]
+
+RETURN
+IF(ISBLANK(current_cost) && ISBLANK(last_cost),
+    BLANK(),
+    DIVIDE((current_cost-last_cost),last_cost)
+)
+```
+here is the dax expression for the previous year
+```DAX
+Gross Profit(last year) = 
+CALCULATE(
+    [Gross Profit],PREVIOUSYEAR(DimDate[Date])
+    )
+```
+The Sales Performance page provides a comprehensive overview of key metrics, trends, and product/category performance, including KPIs like gross profit, revenue, Cost Sales trends from 2011-2016, unit price-cost relationships, top-performing products, and dominant sales in the Urban category. Below is the sale performance page of our report 
+[image]()
+
+### Overview
+The dashboard displays four main KPI cards, each providing critical sales performance metrics:
+1. **Gross Profit**
+    - Value: $17.70M
+    - Year-over-Year Comparison: "Last year ---" (Data not available)
+    - Gross Profit Margin: 27.00%
+2. **Total Cost**
+   - Value: $47.85M
+   - Year-over-Year Comparison: "Last year ---" (Data not available)
+3. **Total Revenue**
+   - Value: $65.55M
+   - Year-over-Year Comparison: "Last year ---" (Data not available)
+5. **Total Sales**
+   - Value: 675K
+   - Year-over-Year Comparison: "Last year ---" (Data not available)
+     
+**Reason for Missing Year-over-Year Comparison Data**
+The dashboard currently shows aggregated data for the entire period (2011–2016) due to the absence of a specific year filter. As a result, the "Last year" comparison field remains blank.
+
+However, if a specific year (e.g., 2013) is selected, the KPIs will dynamically update to display:
+
+![SharedScreenshot](https://github.com/user-attachments/assets/a916d2d9-bff5-4a64-9b4c-2aeb8a7e14b7)
+
+This functionality allows for more precise trend analysis and performance benchmarking when filtering by individual years.
+
+
+
+
+
 
 
 ## Observations
