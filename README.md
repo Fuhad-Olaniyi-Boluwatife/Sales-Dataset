@@ -197,6 +197,7 @@ To enhance the analytical depth of the report, I introduced the following calcul
 
   here is the dax expression for the percentage change
   ```DAX
+<<<<<<< HEAD
   %total cost = 
   VAR current_cost = [Total Cost]
   VAR last_cost = [total cost(last year)]
@@ -205,6 +206,18 @@ To enhance the analytical depth of the report, I introduced the following calcul
       BLANK(),
       DIVIDE((current_cost-last_cost),last_cost)
   )
+=======
+%total cost = 
+VAR current_cost = [Total Cost]
+VAR last_cost = [total cost(last year)]
+
+RETURN
+IF(ISBLANK(current_cost) && ISBLANK(last_cost),
+    BLANK(),
+    DIVIDE((current_cost-last_cost),last_cost)
+)
+```
+>>>>>>> c3f470d1fe04b4f0acf806ed0afb05e280b7742f
 
 here is the DAX expression for the previous year
 
