@@ -165,11 +165,12 @@ To enhance the analytical depth of the report, I introduced the following measur
   )
   ```
   
+
 Below is the customer page 
 
 ![customer page](https://github.com/user-attachments/assets/1c035e00-d1d7-4624-b0e3-015c50da0cca)
 
-  
+
 The dashboard provides an overview of customer metrics, segmentation, and top performers.
   ### Overall Customer Base
   - Total Customer: 282600
@@ -183,6 +184,7 @@ The dashboard provides an overview of customer metrics, segmentation, and top pe
   - The evaluation of customer spending patterns identifies Rhonda Hanson as the highest-spending individual, with total purchases amounting to $1,250 during the entire analysis period. This finding emerges from our ranking of the top 10 customers based on cumulative expenditure, which serves as a valuable indicator of client value and purchasing behavior.
   - Customer distribution by state shows the highest concentrations in Texas (TX) with 25,366 customers, California (CA) with 19,975, and Florida (FL) with 18,859. The table further breaks down these state totals by spending tier (Bronze, Gold, Platinum, Silver).
     
+
 The customer spending data can be filtered by year to track purchasing behavior over time. This reveals valuable insights, such as whether top customers like Rhonda Hanson ($1,250 total spend) maintained consistent spending year after year or had fluctuating patterns. By analyzing these yearly trends, we can identify loyal customers, spot emerging high-value clients, and notice any declining spenders who may need re-engagement. This time-based view helps tailor customer retention strategies and personalize marketing efforts more effectively.
 
 ### Sales performance
@@ -204,8 +206,9 @@ IF(ISBLANK(current_cost) && ISBLANK(last_cost),
     BLANK(),
     DIVIDE((current_cost-last_cost),last_cost)
 )
-```
-here is the dax expression for the previous year
+
+here is the DAX expression for the previous year
+
 ```DAX
 Gross Profit(last year) = 
 CALCULATE(
@@ -231,6 +234,7 @@ The dashboard displays four main KPI cards, each providing critical sales perfor
    - Value: 675K
    - Year-over-Year Comparison: "Last year ---" (Data not available)
      
+
 **Reason for Missing Year-over-Year Comparison Data**
 The dashboard currently shows aggregated data for the entire period (2011–2016) due to the absence of a specific year filter. As a result, the "Last year" comparison field remains blank.
 
