@@ -206,6 +206,7 @@ IF(ISBLANK(current_cost) && ISBLANK(last_cost),
     BLANK(),
     DIVIDE((current_cost-last_cost),last_cost)
 )
+```
 
 here is the DAX expression for the previous year
 
