@@ -195,7 +195,7 @@ To enhance the analytical depth of the report, I introduced the following calcul
 - Total Sales (Select year, previous year and the percentage change bewteen both)
 - Profit margin (switch is uniform over the years for this dataset)
 
-  here is the dax expression for the percentage change
+here is the dax expression for the percentage change
   ```DAX
 %total cost = 
   VAR current_cost = [Total Cost]
@@ -244,16 +244,29 @@ However, if a specific year (e.g., 2013) is selected, the KPIs will dynamically 
 This functionality allows for more precise trend analysis and performance benchmarking when filtering by individual years.
 
 
-
-jhjhjlkvjo 
-
-
-
-
+### Performance Trends by Revenue, Profit, and Sales (2011–2016)
+The panel presents a multi-line chart tracking the trends of total revenue, gross profit, and total sales from 2011 to 2016. Total revenue is represented by a white line, gross profit by a light teal line, and total sales by a dark teal line. The visualization reveals notable fluctuations in all three metrics over the six-year period. Notably, revenue and profit exhibit a strong correlation, moving in close alignment throughout the timeline. This suggests that changes in revenue directly influenced profit margins during these years. Meanwhile, total sales followed a distinct but related trajectory, providing additional context on overall business performance.
+![SharedScreensh](https://github.com/user-attachments/assets/a7097cec-b411-4e6d-83b7-f5798693e50d)
+![SharedScreensh](https://github.com/user-attachments/assets/a7097cec-b411-4e6d-83b7-f5798693e50d)
 
 
 
-## Observations
+
+
+[image]()
+### Unit Price vs Cost Price
+This shows a strong positive linear relationship between unit cost and unit price, indicating a consistent pricing strategy relative to cost over the entire year. This consistency remains uniform for individual years when filtering the dashboard by year, though with a slight change in the rate at which the unit price changes with respect to cost price.
+
+
+
+[image]()
+
+### Top product
+This displays the top-performing products ranked by a selected metric, helping to identify the most patronized products. A toggle feature allows users to switch the ranking criteria between 'Profit' and 'Sales,' with the current view set to 'Profit' for this analysis.
+
+### Observation
+Sales by catergories 
+The data clearly indicates that the "Urban" category accounts for the overwhelming majority of sales, significantly outperforming all other segments. By contrast, the "Rural" category contributes only a negligible portion of total sales across the entire period. While minor fluctuations in Rural sales become apparent when examining the data on a year-by-year basis, they remain consistently low in absolute terms. This stark disparity underscores Urban's dominant position in the market
 
 ## Recommendations
 
