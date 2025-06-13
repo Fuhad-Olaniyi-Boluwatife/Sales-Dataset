@@ -197,15 +197,14 @@ To enhance the analytical depth of the report, I introduced the following calcul
 
   here is the dax expression for the percentage change
   ```DAX
-%total cost = 
-VAR current_cost = [Total Cost]
-VAR last_cost = [total cost(last year)]
-
-RETURN
-IF(ISBLANK(current_cost) && ISBLANK(last_cost),
-    BLANK(),
-    DIVIDE((current_cost-last_cost),last_cost)
-)
+  %total cost = 
+  VAR current_cost = [Total Cost]
+  VAR last_cost = [total cost(last year)]
+  RETURN
+  IF(ISBLANK(current_cost) && ISBLANK(last_cost),
+      BLANK(),
+      DIVIDE((current_cost-last_cost),last_cost)
+  )
 
 here is the DAX expression for the previous year
 
@@ -243,6 +242,10 @@ However, if a specific year (e.g., 2013) is selected, the KPIs will dynamically 
 ![SharedScreenshot](https://github.com/user-attachments/assets/a916d2d9-bff5-4a64-9b4c-2aeb8a7e14b7)
 
 This functionality allows for more precise trend analysis and performance benchmarking when filtering by individual years.
+
+
+
+jhjhjlkvjo 
 
 
 
