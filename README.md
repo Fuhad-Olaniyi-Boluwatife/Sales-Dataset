@@ -3,38 +3,28 @@
 ## Table of Contents
 
 > - [Introduction](#introduction )
->
-> - [Statement of Problem](#statement-of-problem)
->
+>- [Statement of Problem](#statement-of-problem)
 > - [Tools and methodology](#tools-and-methodology)
->
-> - [Data Source](#data-source)
->
-> - [Data Preparation and Trasformation](#data-preparation-and-transformation)
->
-> - [Data Visualization and Analysis](#data-visualization-and-analysis)
->
+>- [Data Source](#data-source)
+> - [Data Preparation and Transformation](#data-preparation-and-transformation)
+>- [Data Visualization , Analysis, and Observations](#data-visualization,-analysis,-observations)
 > - [Conclusion](#conclusion)
->
-> - [Observations](#observations)
->
-> - [Recommendations](#recommendations)
->
+>- [Recommendations](#recommendations)
 > - [Referencing](#referencing)
 >
->   
+> 
 
 
 
 ## Introduction
 
-This is an open dataset, provided by *Pragmatic World*, that contains comprehensive sales records from a typical e-commerce operation. It captures various facets of sales activities, with key data points including unique identifiers for products, customers, and manufacturers, along with other essential transaction details.
+This is an open dataset provided by the Pragmatic World which contains sales records for a typical e-commerce business. It touches upon various aspects of sales activities, with key data points including unique identifiers for products, customers, and manufacturers, along with some other important details concerning the transactions.
 
-Each record represents a specific sales event, detailing the transaction date, the number of units purchased, and financial metrics such as unit cost and unit price. Additionally, the dataset enriches product insights with information like product names, categories, market segments, and manufacturer details.
+Each entry corresponds to a concrete sales event, which has transaction dates, the number of units sold to a customer, and financial details like unit cost and unit price. Alongside the sales transactions, the products are further detailed with information about product name, product category, market segment, and manufacturer.
 
-To provide deeper geographical context, the dataset also includes location-based data for each transaction, such as zip code, city, state, region, district, and country, enabling robust spatial analysis.
+In addition to these details, the dataset also provides location details for every transaction, including zip code, city, state, region, district, and country, which makes it conducive to spatial analysis.
 
-Here is the look of the dataset 
+Here is how the dataset looks: 
 
 ![dataset](https://github.com/user-attachments/assets/adb383dd-67d2-4bb8-b93c-57ba0305628c)
 
@@ -51,8 +41,6 @@ By leveraging this dataset, I have analyzed sales trends, explored customer beha
 ## Statement of Problem
 
 This is to see how we can optimize product and regional performance by identifying high-value customers, best-selling product segments, and underperforming areas over time.
-
-
 
 
 
@@ -129,7 +117,7 @@ Following the data modelling process, key insights were derived and categorized 
 This structured approach ensures efficient data analysis and supports robust reporting capabilities.
 
 
-## Data visualization and analysis
+## Data visualization, Analysis and Observations
 ### Customer Performance
 To enhance the analytical depth of the report, I introduced the following measures and calculated columns:
 
@@ -188,7 +176,13 @@ The dashboard provides an overview of customer metrics, segmentation, and top pe
   - Customer distribution by state shows the highest concentrations in Texas (TX) with 25,366 customers, California (CA) with 19,975, and Florida (FL) with 18,859. The table further breaks down these state totals by spending tier (Bronze, Gold, Platinum, Silver).
     
 
-The customer spending data can be filtered by year to track purchasing behavior over time. This reveals valuable insights, such as whether top customers like Rhonda Hanson ($1,250 total spend) maintained consistent spending year after year or had fluctuating patterns. By analyzing these yearly trends, we can identify loyal customers, spot emerging high-value clients, and notice any declining spenders who may need re-engagement. This time-based view helps tailor customer retention strategies and personalize marketing efforts more effectively.
+**Key Observation:** From the results of the analysis of the customer data, several conclusions may be drawn. first and foremost, the business enjoys a very high customer retention rate, with over 98% of the 282,600 customers having been repeat customers (276,760)over the years; this reflects very strong customer loyalty and, subsequently, repeat business. From a financial point of view, the average revenue per customer is $231.95, providing a good reference for evaluating the lifetime value of customers and identifying potential upsell opportunities.
+
+Furthermore, customer segmentation indicates that the base is dominated by Silver-tier customers, who account for 72.36% of all customers. The Gold-tier clients occupy the second position at 16.75% of the customer base, while Bronze-tier customers come in third at 10.62%. A scant 0.26% belongs to platinum-level, suggesting a potential area for growth by cultivating more high-value relationships. Worth mentioning is the top individual spender, in the name of Rhonda Hanson, who has shelled out to the tune of $1,250, constituting an excellent example worth looking into even for analyzing the behaviours of high-value customers.
+
+Geographically, customers are more heavily concentrated in some states than in the other states, with Texas having 25,366 customers, California having 19,975 customers, and Florida having 18,859 customers. These states could be chosen for more targeted, localized campaigns and for more involvement with deeper customer engagements. Furthermore, looking at how much customers spend in each state also helps us improve our nationwide marketing, especially when trying to keep Silver-tier customers in our biggest states.
+
+Finally, filtering customer spending per year allows for a deep dive into analysis by date, revealing treat-worthy insights such as whether the highest-spending customer, Rhonda Hanson ($1,250 total spend), kept spending consistently year after year or if they probably had fluctuating shapes. By analyzing these annual spend trends, we can spot loyal customers, identify rising stars, see if sales trends are consistent over time in states, notice those who are losing spenders needing re-engagement, and finally suit customer retention strategies and thus segmentation marketing based on this decision.
 
 ### Sales performance
 To enhance the analytical depth of the report, I introduced the following calculate measures:
@@ -264,11 +258,16 @@ This displays the top-performing products ranked by a selected metric, helping t
 
 ![sales](https://github.com/user-attachments/assets/9fb83731-35c3-473a-8c1e-3f4cea62cd88)
 
-
 **Sales by catergories**
 The data clearly indicates that the "Urban" category accounts for the overwhelming majority of sales, significantly outperforming all other segments. By contrast, the "Rural" category contributes only a negligible portion of total sales across the entire period. While minor fluctuations in Rural sales become apparent when examining the data on a year-by-year basis, they remain consistently low in absolute terms. This stark disparity underscores Urban's dominant position in the market
 
 ![tyutu](https://github.com/user-attachments/assets/1bace0a6-5374-47be-90b2-6e81c0327e7d)
+
+**Key Observation: **From the performance trend, the revenue and the gross profit have the same relationship, meaning that a fluctuation in revenue will be accompanied by a corresponding fluctuation in gross profit from period to period. The total sales follow allied but slightly different trajectories, thus reflecting broader trends in the business. Also from the scatter plot, we can see that there exists a strong and positive linear relationship between the unit price and cost price, implying that the pricing strategy is consistent throughout the period. Even when we filter the data by year, we still see the pattern appear, although just with a little deviation in the rate of change. 
+
+The dashboard also features a Top Products view, where products are ranked according to selected performance metrics: profit and sales. The change in these performance metrics causes a shift in product rankings; however, some products remain consistently strong in the top 10. In addition, we also observed an overwhelming contribution in sales by the urban product category, which stands well ahead of all other categories. On the other hand, sales contribution from the rural product category is very little, accounting for approximately zero in the sale. These trends thus indicate the urban product as the major founding pillar of the sales and also point to the possibility of either enhancing or restructuring strategy for the less successful rural market.
+
+Finally, filtering the dataset by specific years offers deeper insight into year-over-year sales performance and helps identify consistent patterns or anomalies in key performance indicators (KPIs). This functionality is essential for understanding how metrics vary over time and supports more informed, data-driven decision-making.
 
 ### Geography Performance
 
@@ -286,20 +285,29 @@ The line chart visualization illustrates sales trends across three regions—Cen
 
 **Proportion of sales by region**
 
-The donut chart presents the breakdown of total sales across three key regions: East, Central, and West. The East region dominates with $318K in sales, accounting for 47% of the total and representing nearly half of all revenue. The Central region follows with $247K (37%), contributing slightly over one-third of sales, while the West region trails significantly at just $110K (16%). 
+The donut chart depicts the proportional division of total sales among the three primary regions: East, Central, and West. The East exerts dominance with $318K in sales, making up 47% of the whole, which is basically half of the revenue. It is then followed by the Central region, with $247K, or 37%, contributing just over one-third to the sales, while the West region is grossly behind at $110K (16%). 
 
-**Key Observation:** This distribution reveals a substantial imbalance in regional performance, with the East region driving the majority of sales. The significant underperformance of the West region, which contributes less than one-fifth of total revenue, suggests potential opportunities for targeted sales strategies to improve performance in this area and create a more balanced regional contribution to overall sales.
+**Key Observation:** This indicates a big imbalance in regional performance, with the East region having most of its sales. Because the West region underperforms to such an extent, contributing less than one-fifth to total revenue, there lie opportunities for implementing focused sales strategies in improving this area toward more balanced regional contributions to total sales.
 
 **Category Breakdown Across the Region**
 
-This profit analysis shows how money is made across three regions (East, Central, West) from five product types. as have seen before, the East region makes the most profit ($291,533 - nearly half of all profits), followed by Central ($223,877 - about one-third), and West ($99,120 - just 16%). All regions show the same basic pattern: Urban products dominate, Accessories do little, and other products contribute very little. Urban products are by far the biggest earners, making up 91-93% of each region's profits. Accessories consistently come second with 5-7% of profits, while Mix products contribute about 2.5-2.7%. Rural and Youth products barely make any money at all. 
+This profit analysis depicts money generation across three regions (East, Central, and West) for five product categories. As have been seen before, the East puffs up as the most profitable region ($291,533, contributing almost half of all profits), followed by the Central ($223,877—contributing roughly one-third), and then lastly the West ($99,120—just 16%). All regions display the same basic pattern: urban products are in the lead, accessories seem negligible, and other products contribute few profits. Urban products generate 91%-93% of profits from any region. Accessories earn profits that range between 5% and 7%, whereas Mix products stand at around 2.5% to 2.7%. Rural and youth products barely make any money at all.
 
-**Key Observation:** This tells us we should probably focus most on Urban products everywhere, maybe try to sell more Accessories, and figure out why West isn't making as much money despite selling similar products. The nearly zero profits from Rural products across all regions might mean we need to either improve how we sell them or stop offering them. The consistency across regions suggests customers everywhere prefer the same types of products, which could make planning easier.
+**Key observation:** This shows we should probably focus mostly on looking at Urban products anywhere, possibly push more accessory products as well, and find out why West is not making much money despite selling similar products. Looking at rural products, they tend to bring almost zero in profits across all regions. I think we must either work on selling them better or give up on them. This uniformity across regions suggests that customers all over share the preference for the same kind of products, which may facilitate the planning process.
 
+## Conclusion
+
+Looking from the customer perspective, the business gets high retention rates and a loyal customer base that keeps returning to them, indicating very high satisfaction and loyalty. While on customer segmentation, the Silver-tier customers constitute a strong base at mid-level, although greater efforts can be channelled into acquiring higher-value Platinum-tier customers. Based on location, we found customers clustered in states like Texas, California, and Florida; these markets clearly stand to benefit from marketing and engagement efforts targeted at them. Annual spending amount trends are further used to identify consistent high spenders as well as mark those customers who may require re-engagement.
+
+We can see from the sales perspective that the revenue and profit show a tight relationship between 2011 and 2016, inferring the latter always being brought about by the former in same proportion from the performance trend. Also, the linear positive correlation between unit price and unit cost affirms stable pricing policies, indicating that at no point in time does the store run at a loss merely looking at the gross profit. But since from the data set nothing was said about the operation cost, taxation, and other expenses, we can't drill down to see if the company isn't at risk after other expenses have been paid. Still on sales, Urban products show sustained growth, with the majority of sales coming from this category. In contrast, underperforming Rural products continue to damage the brand's image, necessitating further consideration for uplifting or repositioning this category. Additional yearly sales filters provide more insights into the inner workings of sales and point to new trends or irregularities.
+
+Revenue-wise, the East region is the topper, whereas the West significantly underperforms. This regional split may hold some clues for strategies in the underperforming areas, especially the West. The urban product category is a constant success across all regions. This suggests that there are strong customer affinities that are uniformly established, which should now ease the way forward with planning and product focus.
 
 ## Recommendations
 
 ## Referencing  
+
+pragmatic world
 
 
 
