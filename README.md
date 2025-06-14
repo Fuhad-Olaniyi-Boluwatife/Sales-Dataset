@@ -261,15 +261,15 @@ The data clearly indicates that the "Urban" category accounts for the overwhelmi
 
 ![tyutu](https://github.com/user-attachments/assets/1bace0a6-5374-47be-90b2-6e81c0327e7d)
 
-**Key Observation: **From the performance trend, the revenue and the gross profit have the same relationship, meaning that a fluctuation in revenue will be accompanied by a corresponding fluctuation in gross profit from period to period. The total sales follow allied but slightly different trajectories, thus reflecting broader trends in the business. Also from the scatter plot, we can see that there exists a strong and positive linear relationship between the unit price and cost price, implying that the pricing strategy is consistent throughout the period. Even when we filter the data by year, we still see the pattern appear, although just with a little deviation in the rate of change. 
+**Key Observation:** From the performance trend, the revenue and the gross profit have the same relationship, meaning that a fluctuation in revenue will be accompanied by a corresponding fluctuation in gross profit from period to period. The total sales follow allied but slightly different trajectories, thus reflecting broader trends in the business. Also from the scatter plot, we can see that there exists a strong and positive linear relationship between the unit price and cost price, implying that the pricing strategy is consistent throughout the period. Even when we filter the data by year, we still see the pattern appear, although just with a little deviation in the rate of change. 
 
 The dashboard also features a Top Products view, where products are ranked according to selected performance metrics: profit and sales. The change in these performance metrics causes a shift in product rankings; however, some products remain consistently strong in the top 10. In addition, we also observed an overwhelming contribution in sales by the urban product category, which stands well ahead of all other categories. On the other hand, sales contribution from the rural product category is very little, accounting for approximately zero in the sale. These trends thus indicate the urban product as the major founding pillar of the sales and also point to the possibility of either enhancing or restructuring strategy for the less successful rural market.
 
 Finally, filtering the dataset by specific years offers deeper insight into year-over-year sales performance and helps identify consistent patterns or anomalies in key performance indicators (KPIs). This functionality is essential for understanding how metrics vary over time and supports more informed, data-driven decision-making.
 
 ### Geography Performance
+![Geography](https://github.com/user-attachments/assets/9ef9e37e-5f9c-4a02-928d-57a6a271b4db)
 
-[all the dashboard]
 
 **Overview**
 
@@ -277,13 +277,18 @@ Finally, filtering the dataset by specific years offers deeper insight into year
 
 The line chart visualization illustrates sales trends across three regions—Central, East, and West—from 2011 to 2016. The y-axis represents total sales, while the x-axis displays the years 2011 through 2016. Each region is represented by a distinct line: Central (light teal), East (medium teal), and West (white).  
 
+![trend](https://github.com/user-attachments/assets/f0b2b4d0-b055-45b7-bae7-5defe7cc0674)
+
 **Key observations:** There is cyclical patterns in sales within each year, likely reflecting quarterly fluctuations. The East region consistently outperforms the others, maintaining the highest sales throughout the period (top line), while the Central region shows middle-range performance. The West region remains the lowest-performing (bottom line). Despite these differences, all regions exhibit a general upward trend over the six-year period, indicating overall growth in sales. This analysis highlights both regional disparities and consistent market expansion across the board. 
 
-[image]()
+
 
 **Proportion of sales by region**
 
 The donut chart depicts the proportional division of total sales among the three primary regions: East, Central, and West. The East exerts dominance with $318K in sales, making up 47% of the whole, which is basically half of the revenue. It is then followed by the Central region, with $247K, or 37%, contributing just over one-third to the sales, while the West region is grossly behind at $110K (16%). 
+
+![Geography0](https://github.com/user-attachments/assets/e574956d-c54a-4a02-8cf5-25990187abab)
+
 
 **Key Observation:** This indicates a big imbalance in regional performance, with the East region having most of its sales. Because the West region underperforms to such an extent, contributing less than one-fifth to total revenue, there lie opportunities for implementing focused sales strategies in improving this area toward more balanced regional contributions to total sales.
 
@@ -291,7 +296,18 @@ The donut chart depicts the proportional division of total sales among the three
 
 This profit analysis depicts money generation across three regions (East, Central, and West) for five product categories. As have been seen before, the East puffs up as the most profitable region ($291,533, contributing almost half of all profits), followed by the Central ($223,877—contributing roughly one-third), and then lastly the West ($99,120—just 16%). All regions display the same basic pattern: urban products are in the lead, accessories seem negligible, and other products contribute few profits. Urban products generate 91%-93% of profits from any region. Accessories earn profits that range between 5% and 7%, whereas Mix products stand at around 2.5% to 2.7%. Rural and youth products barely make any money at all.
 
+![1](https://github.com/user-attachments/assets/0998a6b0-3bbb-4ab5-8168-234432ad5c03)
+
+
 **Key observation:** This shows we should probably focus mostly on looking at Urban products anywhere, possibly push more accessory products as well, and find out why West is not making much money despite selling similar products. Looking at rural products, they tend to bring almost zero in profits across all regions. I think we must either work on selling them better or give up on them. This uniformity across regions suggests that customers all over share the preference for the same kind of products, which may facilitate the planning process.
+
+**sales and profit by region**
+this show the percentage of gross profit and revenue of the total gross profit and sales both in map version and table version(based on the selected option).
+**Key Obseeravation:** Texas, Florida, and California stand as the highest-performing states, contributing a combined 22.47% of the total gross profits. The 10 highest-ranking states, in fact, contribute in aggregate almost half (48.7%) of all profits, showing the levels of concentration business success enjoys in a few regions. An average gross profit margin of 27% is reported across states, which falls in line with the trend presented for gross sales.
+
+High profit levels in the East occur thanks to states that are reasonably ranked, such as Texas, Ohio, Pennsylvania, New York, Michigan, and North Carolina; meanwhile, Illinois, Ohio, Michigan, and Wisconsin provide second-place support to the Central Region.
+
+Beyond the big-league states is a world of sharp declines: 11 states each bring in 1-2% of revenue and profit; 10 states weigh in from 2-3%; and the remaining last 19 states, representing 11.23% combined, weighing below 1%. This distribution shows the sheer proportion of successes coming from a handful of states.
 
 ## Conclusion
 
