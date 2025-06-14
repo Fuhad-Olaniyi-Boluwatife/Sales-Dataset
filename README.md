@@ -210,7 +210,9 @@ CALCULATE(
     )
 ```
 The Sales Performance page provides a comprehensive overview of key metrics, trends, and product/category performance, including KPIs like gross profit, revenue, Cost Sales trends from 2011-2016, unit price-cost relationships, top-performing products, and dominant sales in the Urban category. Below is the sale performance page of our report.
-[image]()
+
+![SharedScreenshot1](https://github.com/user-attachments/assets/28fd0876-32c3-4d7c-966b-962921467e57)
+
 
 **Overview**
 The dashboard displays four main KPI cards, each providing critical sales performance metrics:
@@ -303,6 +305,11 @@ This profit analysis depicts money generation across three regions (East, Centra
 
 **sales and profit by region**
 this show the percentage of gross profit and revenue of the total gross profit and sales both in map version and table version(based on the selected option).
+
+![geo](https://github.com/user-attachments/assets/e5d9ae2f-10cd-4d3e-b58e-e6bc1cd4b960)
+
+![map view](https://github.com/user-attachments/assets/ae8520a2-a661-464a-9f01-321d0d0bcec7)
+
 **Key Obseeravation:** Texas, Florida, and California stand as the highest-performing states, contributing a combined 22.47% of the total gross profits. The 10 highest-ranking states, in fact, contribute in aggregate almost half (48.7%) of all profits, showing the levels of concentration business success enjoys in a few regions. An average gross profit margin of 27% is reported across states, which falls in line with the trend presented for gross sales.
 
 High profit levels in the East occur thanks to states that are reasonably ranked, such as Texas, Ohio, Pennsylvania, New York, Michigan, and North Carolina; meanwhile, Illinois, Ohio, Michigan, and Wisconsin provide second-place support to the Central Region.
