@@ -61,7 +61,7 @@ This is to see how we can optimize product and regional performance by identifyi
 Microsoft Power BI and Power Query;
 
 - **Data Preparation**: Performed data normalization, extraction, and cleaning using **Power Query**.
-- **Data Modeling**: Built a **star schema** in **Microsoft Power BI** for optimized analytics.
+- **Data Modelling**: Built a **star schema** in **Microsoft Power BI** for optimized analytics.
 - **Advanced Analytics**: Leveraged **DAX** to create calculated columns, custom measures, and a dynamic **calendar table** for time intelligence in Microsoft Power BI.
 - **Visualization**: Developed interactive dashboards to transform raw data into actionable insights using Microsoft Power BI.
 
@@ -76,12 +76,11 @@ below is how the data looks after data preparation in power query
 
 This analysis utilizes an open dataset provided by **Pragmatic World**, containing **675,368 rows and 19 columns** in its raw form.
 
-#### **Dataset Structure**:
+### Dataset Structure:
 
 - **Initial State**: Single table with transactional sales data
 
 - **Transformed Structure**: Normalized into **6 tables** using dimensional modelling:
-
   - **1 Fact Table**: Sales transactions (granular records)
   - **5 Dimension Tables**: Supporting reference data (DimProducts, DimCustomers, Dimdate(custom -built for time intelligence analytics), dimCatergories, dimGeographical Tables.
 
@@ -97,8 +96,9 @@ Here are the tables in power bi
 ## Data Preparation and Transformation
 The dataset is nearly in its final cleaned form, with only minor amendments required to ensure optimal data efficiency. These refinements will be applied to the unified dataset before splitting it into various dimension and fact tables. The transformations were performed using the Power Query Editor in Power BI and include the following steps:
 
-### Dimensional Modeling
-The dataset was normalized into 6 tables using dimensional modeling principles:
+### Dimensional Modelling
+
+The dataset was normalized into 6 tables using dimensional modelling principles:
 
 - 1 Fact Table: Contains granular sales transaction records.
 
@@ -118,9 +118,9 @@ All tables are linked via primary and foreign keys to establish relational integ
 
 ![Modelling](https://github.com/user-attachments/assets/c860eef9-5577-40d2-abf6-a65840c452a3)
 
+**Key Insights**
 
-### Key Insights
-Following the data modeling process, key insights were derived and categorized into three main areas for analysis:
+Following the data modelling process, key insights were derived and categorized into three main areas for analysis:
 
 -  Customer Performance
 -  Sales Performance
@@ -130,20 +130,21 @@ This structured approach ensures efficient data analysis and supports robust rep
 
 
 ## Data visualization and analysis
-### Customer Perfromance
+### Customer Performance
 To enhance the analytical depth of the report, I introduced the following measures and calculated columns:
 
 **Key Measures** 
+
 - Total Customer Count: Calculates the distinct number of customers.
 - Average Revenue per Customer: Determines the mean revenue generated per customer.
   
   ```DAX
-  average revenue per customer = DIVIDE([Total Revenue],COUNT(DimCustomer[Full name]))
+  average revenue per customer = DIVIDE([Total Revenue],COUNT(DimCustomer[Full name]))    
   ```
   
-  ​    
 
 **Customer Segmentation (Calculated Column)**
+
 - Customers were categorized into four tiers based on their generated revenue:
   
   - Platinum (Highest revenue)
@@ -172,7 +173,9 @@ Below is the customer page
 
 
 The dashboard provides an overview of customer metrics, segmentation, and top performers.
-  ### Overall Customer Base
+
+**Overall Customer Base**
+
   - Total Customer: 282600
   - average revenue generated per customer: 231.95
   - Customer Type: The customer base is dominated by returning customers (276,760) with a much smaller number of new customers (5,830).
@@ -214,11 +217,12 @@ CALCULATE(
     [Gross Profit],PREVIOUSYEAR(DimDate[Date])
     )
 ```
-The Sales Performance page provides a comprehensive overview of key metrics, trends, and product/category performance, including KPIs like gross profit, revenue, Cost Sales trends from 2011-2016, unit price-cost relationships, top-performing products, and dominant sales in the Urban category. Below is the sale performance page of our report 
+The Sales Performance page provides a comprehensive overview of key metrics, trends, and product/category performance, including KPIs like gross profit, revenue, Cost Sales trends from 2011-2016, unit price-cost relationships, top-performing products, and dominant sales in the Urban category. Below is the sale performance page of our report.
 [image]()
 
 **Overview**
 The dashboard displays four main KPI cards, each providing critical sales performance metrics:
+
 1. **Gross Profit**
     - Value: $17.70M
     - Year-over-Year Comparison: "Last year ---" (Data not available)
@@ -243,7 +247,6 @@ However, if a specific year (e.g., 2013) is selected, the KPIs will dynamically 
 
 This functionality allows for more precise trend analysis and performance benchmarking when filtering by individual years.
 
-
 **Performance Trends by Revenue, Profit, and Sales (2011–2016)**
 The panel presents a multi-line chart tracking the trends of total revenue, gross profit, and total sales from 2011 to 2016. Total revenue is represented by a white line, gross profit by a light teal line, and total sales by a dark teal line. The visualization reveals notable fluctuations in all three metrics over the six-year period. Notably, revenue and profit exhibit a strong correlation, moving in close alignment throughout the timeline. This suggests that changes in revenue directly influenced profit margins during these years. Meanwhile, total sales followed a distinct but related trajectory, providing additional context on overall business performance.
 
@@ -267,8 +270,31 @@ The data clearly indicates that the "Urban" category accounts for the overwhelmi
 
 ![tyutu](https://github.com/user-attachments/assets/1bace0a6-5374-47be-90b2-6e81c0327e7d)
 
+### Geography Performance
 
-###
+[all the dashboard]
+
+**Overview**
+
+**Sales growth region over the years**  
+
+The line chart visualization illustrates sales trends across three regions—Central, East, and West—from 2011 to 2016. The y-axis represents total sales, while the x-axis displays the years 2011 through 2016. Each region is represented by a distinct line: Central (light teal), East (medium teal), and West (white).  
+
+**Key observations:** There is cyclical patterns in sales within each year, likely reflecting quarterly fluctuations. The East region consistently outperforms the others, maintaining the highest sales throughout the period (top line), while the Central region shows middle-range performance. The West region remains the lowest-performing (bottom line). Despite these differences, all regions exhibit a general upward trend over the six-year period, indicating overall growth in sales. This analysis highlights both regional disparities and consistent market expansion across the board. 
+
+[image]()
+
+**Proportion of sales by region**
+
+The donut chart presents the breakdown of total sales across three key regions: East, Central, and West. The East region dominates with $318K in sales, accounting for 47% of the total and representing nearly half of all revenue. The Central region follows with $247K (37%), contributing slightly over one-third of sales, while the West region trails significantly at just $110K (16%). 
+
+**Key Observation:** This distribution reveals a substantial imbalance in regional performance, with the East region driving the majority of sales. The significant underperformance of the West region, which contributes less than one-fifth of total revenue, suggests potential opportunities for targeted sales strategies to improve performance in this area and create a more balanced regional contribution to overall sales.
+
+**Category Breakdown Across the Region**
+
+This profit analysis shows how money is made across three regions (East, Central, West) from five product types. as have seen before, the East region makes the most profit ($291,533 - nearly half of all profits), followed by Central ($223,877 - about one-third), and West ($99,120 - just 16%). All regions show the same basic pattern: Urban products dominate, Accessories do little, and other products contribute very little. Urban products are by far the biggest earners, making up 91-93% of each region's profits. Accessories consistently come second with 5-7% of profits, while Mix products contribute about 2.5-2.7%. Rural and Youth products barely make any money at all. 
+
+**Key Observation:** This tells us we should probably focus most on Urban products everywhere, maybe try to sell more Accessories, and figure out why West isn't making as much money despite selling similar products. The nearly zero profits from Rural products across all regions might mean we need to either improve how we sell them or stop offering them. The consistency across regions suggests customers everywhere prefer the same types of products, which could make planning easier.
 
 
 ## Recommendations
