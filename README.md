@@ -3,22 +3,22 @@
 ## Table of Contents
 
 > - [Introduction](#introduction )
->- [Statement of Problem](#statement-of-problem)
+> - [Statement of Problem](#statement-of-problem)
 > - [Tools and methodology](#tools-and-methodology)
->- [Data Source](#data-source)
+> - [Data Source](#data-source)
 > - [Data Preparation and Transformation](#data-preparation-and-transformation)
->- [Data Visualization , Analysis, and Observations](#data-visualization,-analysis,-observations)
+> - [Data Visualization , Analysis, and Observations](#data-visualization,-analysis,-observations)
 > - [Conclusion](#conclusion)
->- [Recommendations](#recommendations)
+> - [Recommendations](#recommendations)
 > - [Referencing](#referencing)
->
-> 
+
+
 
 
 
 ## Introduction
 
-This is an open dataset provided by the Pragmatic World which contains sales records for a typical e-commerce business. It touches upon various aspects of sales activities, with key data points including unique identifiers for products, customers, and manufacturers, along with some other important details concerning the transactions.
+This is an open dataset provided by the Pragmatic Works which contains sales records for a typical e-commerce business. It touches upon various aspects of sales activities, with key data points including unique identifiers for products, customers, and manufacturers, along with some other important details concerning the transactions.
 
 Each entry corresponds to a concrete sales event, which has transaction dates, the number of units sold to a customer, and financial details like unit cost and unit price. Alongside the sales transactions, the products are further detailed with information about product name, product category, market segment, and manufacturer.
 
@@ -28,13 +28,11 @@ Here is how the dataset looks:
 
 ![dataset](https://github.com/user-attachments/assets/adb383dd-67d2-4bb8-b93c-57ba0305628c)
 
-
-
-By leveraging this dataset, I have analyzed sales trends, explored customer behaviour, and assessed geographical performance, uncovering valuable insights to guide strategic decisions. The dashboard below presents key findings and interactive visualizations, enabling deeper exploration of the data’s potential.
+By leveraging on this dataset, I have analyzed sales trends, explored customer behaviour, and assessed geographical performance, uncovering valuable insights to guide strategic decisions. The dashboard below presents key findings and interactive visualizations, enabling deeper exploration of the data’s potential.
 
 [Dashboard]()
 
-
+The dashboard consists of 4 pages: one is a welcome page, and the other 3 are for the customer, sales, and geographical analysis, respectively. This dashboard has fixture buttons to help navigate through each page more easily, no matter where you are on the page.
 
 
 
@@ -62,7 +60,7 @@ below is how the data looks after data preparation in power query
 
 ## Data Source 
 
-This analysis utilizes an open dataset provided by **Pragmatic World**, containing **675,368 rows and 19 columns** in its raw form.
+This analysis utilizes an open dataset provided by **Pragmatic Works**, containing **675,368 rows and 19 columns** in its raw form.
 
 ### Dataset Structure:
 
@@ -307,7 +305,7 @@ Revenue-wise, the East region is the topper, whereas the West significantly unde
 
 ## Referencing  
 
-pragmatic world
+pragmatic works
 
 
 
