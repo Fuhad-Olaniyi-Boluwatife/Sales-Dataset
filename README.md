@@ -7,7 +7,7 @@
 > - [Tools and methodology](#tools-and-methodology)
 > - [Data Source](#data-source)
 > - [Data Preparation and Transformation](#data-preparation-and-transformation)
-> - [Data Visualization, Analysis and Observations](#data-visualization,-analysis-and-observations)
+> - [Data visualization, Analysis and Observations](#data-visualization,-analysis-and-observations)
 > - [Conclusion](#conclusion)
 > - [Recommendations](#recommendations)
 > - [Referencing](#referencing)
