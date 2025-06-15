@@ -30,9 +30,10 @@ Here is how the dataset looks:
 
 By leveraging on this dataset, I have analyzed sales trends, explored customer behaviour, and assessed geographical performance, uncovering valuable insights to guide strategic decisions. The dashboard below presents key findings and interactive visualizations, enabling deeper exploration of the data’s potential.
 
-[Dashboard]()
+https://github.com/user-attachments/assets/e1e41cc0-6411-44ed-9fb9-7e42e0c9fd9a
 
-The dashboard consists of 4 pages: one is a welcome page, and the other 3 are for the customer, sales, and geographical analysis, respectively. This dashboard has fixture buttons to help navigate through each page more easily, no matter where you are on the page.
+
+The dashboard consists of 4 pages: one is a welcome page, and the other 3 are for the customer, sales, and geographical analysis, respectively. This dashboard has fixture buttons to help navigate through each page more easily, no matter where you are on the page. Here is the link to the dashboard
 
 
 
