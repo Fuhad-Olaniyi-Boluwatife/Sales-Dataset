@@ -7,7 +7,7 @@
 > - [Tools and methodology](#tools-and-methodology)
 > - [Data Source](#data-source)
 > - [Data Preparation and Transformation](#data-preparation-and-transformation)
-> - [Data Analysis and Observations](#data-analysis-observations)
+> - [Data Virtualization, Analysis and Observations](#data-virtualization,-analysis-and-observations)
 > - [Conclusion](#conclusion)
 > - [Recommendations](#recommendations)
 > - [Referencing](#referencing)
@@ -113,10 +113,11 @@ Following the data modelling process, key insights were derived and categorized 
 -  Sales Performance
 -  Geographical Performance
 
-This structured approach ensures efficient data analysis and supports robust reporting capabilities.
+This structured approach ensures efficient data analysis and supports crobust reporting capabilities.
 
 
-## Data Analysis and Observations
+## Data Virtualization, Analysis and Observations
+
 ### Customer Performance
 To enhance the analytical depth of the report, I introduced the following measures and calculated columns:
 
