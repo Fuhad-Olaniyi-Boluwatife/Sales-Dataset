@@ -178,9 +178,9 @@ The dashboard provides an overview of customer metrics, segmentation, and top pe
 
 Furthermore, customer segmentation indicates that the base is dominated by Silver-tier customers, who account for 72.36% of all customers. The Gold-tier clients occupy the second position at 16.75% of the customer base, while Bronze-tier customers come in third at 10.62%. A scant 0.26% belongs to platinum-level, suggesting a potential area for growth by cultivating more high-value relationships. Worth mentioning is the top individual spender, in the name of Rhonda Hanson, who has shelled out to the tune of $1,250, constituting an excellent example worth looking into even for analyzing the behaviours of high-value customers.
 
-Geographically, customers are more heavily concentrated in some states than in the other states, with Texas having 25,366 customers, California having 19,975 customers, and Florida having 18,859 customers. These states could be chosen for more targeted, localized campaigns and for more involvement with deeper customer engagements. Furthermore, looking at how much customers spend in each state also helps us improve our nationwide marketing, especially when trying to keep Silver-tier customers in our biggest states.
+Geographically, customers are more heavily concentrated in some states than in the other states, with Texas having 25,366 customers, California having 19,975 customers, and Florida having 18,859 customers. These states could be chosen for more targeted, localized campaigns and for more involvement with deeper customer engagements. in addition to number of customer, we see from the tool tip the category they tend to buy more which is urban products. Furthermore, looking at how much customers spend in each state also helps us improve our nationwide marketing, especially when trying to keep Silver-tier customers in our biggest states.
 
-Finally, filtering customer spending per year allows for a deep dive into analysis by date, revealing treat-worthy insights such as whether the highest-spending customer, Rhonda Hanson ($1,250 total spend), kept spending consistently year after year or if they probably had fluctuating shapes. By analyzing these annual spend trends, we can spot loyal customers, identify rising stars, see if sales trends are consistent over time in states, notice those who are losing spenders needing re-engagement, and finally suit customer retention strategies and thus segmentation marketing based on this decision.
+Finally, filtering customer spending per year allows for a deep dive into analysis by date, revealing treat-worthy insights such as whether the highest-spending customer  Rhonda Hanson ($1,250 total spend), kept spending consistently year after year or if they probably had fluctuating shapes and the category of product she bought. By analyzing these annual spend trends, we can spot loyal customers, identify rising stars, see if sales trends are consistent over time in states, notice those who are losing spenders needing re-engagement, and finally suit customer retention strategies and thus segmentation marketing based on this decision.
 
 ### Sales performance
 To enhance the analytical depth of the report, I introduced the following calculate measures:
@@ -325,6 +325,10 @@ We can see from the sales perspective that the revenue and profit show a tight r
 Revenue-wise, the East region is the topper, whereas the West significantly underperforms. This regional split may hold some clues for strategies in the underperforming areas, especially the West. The urban product category is a constant success across all regions. This suggests that there are strong customer affinities that are uniformly established, which should now ease the way forward with planning and product focus.
 
 ## Recommendations
+
+- If further details can be provided to see the net profit, as these will help to know the future of the business and how it can improve on expanding the business width.
+- Conduct a study regarding low sales areas, especially in the West; find reasons for low sales, making use of customer data from states of these sorts, and analyze further to find selling remedies, while also working to maintain strong performance in the highly-earning states.
+- Further surveys could be conducted among customers to ascertain reasons behind the declining purchases, especially in the youths and rural products category. The outcomes could help to improve sales in the currently depressed categories.
 
 ## Referencing  
 
