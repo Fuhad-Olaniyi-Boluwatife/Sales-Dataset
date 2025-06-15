@@ -7,7 +7,7 @@
 > - [Tools and methodology](#tools-and-methodology)
 > - [Data Source](#data-source)
 > - [Data Preparation and Transformation](#data-preparation-and-transformation)
-> - [Data visualization, Analysis and Observations](#data-visualization,-analysis-and-observations)
+> - [Data Analysis and Observations](#data-analysis-observations)
 > - [Conclusion](#conclusion)
 > - [Recommendations](#recommendations)
 > - [Referencing](#referencing)
@@ -116,7 +116,7 @@ Following the data modelling process, key insights were derived and categorized 
 This structured approach ensures efficient data analysis and supports robust reporting capabilities.
 
 
-## Data visualization, Analysis and Observations
+## Data Analysis and Observations
 ### Customer Performance
 To enhance the analytical depth of the report, I introduced the following measures and calculated columns:
 
