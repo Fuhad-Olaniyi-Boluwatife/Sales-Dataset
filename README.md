@@ -54,7 +54,11 @@ Microsoft Power BI and Power Query;
 
 below is how the data looks after data preparation in power query
 
-![Capture](https://github.com/user-attachments/assets/adcb423e-39d3-483a-ad81-6f7367e5837c)
+
+
+https://github.com/user-attachments/assets/61cf610c-4d3e-4266-a493-36039148b968
+
+
 
 
 
